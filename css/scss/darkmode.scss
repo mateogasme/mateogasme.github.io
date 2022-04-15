@@ -125,3 +125,9 @@ i:hover {
         background: $backgroundDark;
     }
 }
+
+.proyects {
+    body.dark & {
+        background: $backgroundDark;
+    }
+}
