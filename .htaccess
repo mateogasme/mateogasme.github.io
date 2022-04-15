@@ -2,8 +2,8 @@ RewriteEngine on
 
 Options +FollowSymLinks
 
-RewriteCond %{HTTP_HOST} ^www\.midominio\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^www\.midominio\.github\.io$ [NC]
 
-RewriteRule ^(.*)$ http://midominio.com/$1 [R=301,L]
+RewriteRule ^(.*)$ http://mateogasme.github.io/$1 [R=301,L]
 
 ErrorDocument 404 /pages/errors/notfound.html
