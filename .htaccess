@@ -1,0 +1,9 @@
+RewriteEngine on
+
+Options +FollowSymLinks
+
+RewriteCond %{HTTP_HOST} ^www\.midominio\.com$ [NC]
+
+RewriteRule ^(.*)$ http://midominio.com/$1 [R=301,L]
+
+ErrorDocument 404 /pages/errors/notfound.html

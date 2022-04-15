@@ -1,0 +1,99 @@
+body.dark ::-webkit-scrollbar {
+  background: var(--backgroundSidebarDark);
+  width: .8em;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: #282828;
+  margin: .2em;
+}
+
+body {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background: #333;
+}
+
+body.dark .sidebar {
+  background: #262626;
+}
+
+body.dark .mateo-gasme, body.dark .servicios, body.dark .contacto, body.dark .ayuda {
+  background: #333;
+}
+
+body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark li, body.dark i, body.dark .sidebar .sidebar__nav ul li a {
+  color: #fafafa;
+}
+
+body.dark i:hover {
+  color: #c6c6c6;
+}
+
+body.dark .sidebar .sidebar__nav ul li a:hover {
+  color: #c6c6c6;
+}
+
+.switch {
+  cursor: pointer;
+  background: #343D5B;
+  border-radius: 62.5em;
+  border: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: .5em;
+  margin-bottom: .7em;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 1.875em;
+  height: 1.875em;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 6.25em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.242);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.242);
+}
+
+.switch.active {
+  background: #ffa500;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+body.dark .servicios i:hover {
+  color: #fafafa;
+}
+
+body.dark .about {
+  background: #333;
+}
+/*# sourceMappingURL=darkmode.css.map */

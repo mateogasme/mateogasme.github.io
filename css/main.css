@@ -1,0 +1,402 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+/* Github Corner */
+.github-corner {
+    position: fixed !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center !important;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1f74b6;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+:root {
+	/* Colores */
+	--backgroundLight: #fafafa;
+	--backgroundSidebarLight: #f6f6f6;
+	--colorTextLight: #505050;
+	--colorTextLightHover: #1b1b1b;
+	--backgroundDark: #333;
+	--backgroundSidebarDark: #262626;
+	--colorTextDark: #fafafa;
+	--colorTextDarkHover: #c6c6c6;
+	--sombraLight: 1px 0px 21px 0px rgba(0, 0, 0, 0.11);
+	--sombraDark: 1px 0px 21px 0px rgba(255, 255, 255, 0.11);
+
+	/* Transiciones */
+	--trans3: all 0.3s ease;
+	--trans2: all 0.2s ease;
+	--trans1: all 0.1s ease;
+}
+
+::-webkit-scrollbar{
+    background: var(--backgroundSidebarLight);
+	width: .8em;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #c6c6c6;
+	margin: .2em;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	background: var(--backgroundLight);
+	transition: var(--trans3);
+}
+
+span {
+	font-weight: 500;
+}
+
+/*=============================================
+=                    Header                   =
+=============================================*/
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 100vh;
+	background: var(--backgroundSidebarLight);
+	transition: var(--trans3);
+	font-size: 16px;
+	box-shadow: 1px 0px 21px 0px rgba(0, 0, 0, 0.11);
+	-webkit-box-shadow: 1px 0px 21px 0px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 1px 0px 21px 0px rgba(0, 0, 0, 0.11);
+}
+
+.sidebar .sidebar__nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-top: 50px;
+	padding-left: 25px;
+}
+
+.sidebar .sidebar__nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar .sidebar__nav ul li {
+	padding: 10px 0;
+}
+
+.sidebar .sidebar__nav ul li a {
+	display: block;
+	padding: 10px;
+	color: var(--colorTextLight);
+	font-size: 1.34em;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.sidebar .sidebar__nav ul li a:hover {
+	color: var(--colorTextLightHover);
+}
+
+/*=====           End of Header        ======*/
+
+main {
+    margin-left: 28%;
+}
+
+/*=============================================
+=              Mateo Gasme/Inicio             =
+=============================================*/
+.mateo-gasme {
+    width: 50vw;
+    text-align: center;
+    height: 100vh;
+    background: var(--backgroundLight);
+    transition: var(--trans3);
+	color: var(--colorTextLight);
+}
+
+.mateo-gasme .mateo-gasme__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text h1 {
+	font-size: 3em;
+	font-weight: 500;
+	margin-bottom: 20px;
+    animation: mateo-gasme-h1-animation 1s ease;
+}
+
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text p {
+    font-size: 1.2em;
+	font-weight: 300;
+	margin-bottom: 20px;
+    width: 45vw;
+}
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text .btn {
+    background: var(--colorTextLight);
+    padding: 1em;
+    margin-top: 1.25em;
+    color: var(--backgroundLight);
+    border-radius: 4px;
+    font-size: 1.15em;
+    transition: var(--trans3);
+}
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text .btn:hover {
+    background: var(--backgroundLight);
+    color: var(--colorTextLight);
+    border: solid 1px var(--colorTextLight);
+}
+
+.mateo-gasme .mateo-gasme__container .mateo-gasme__container__text p span {
+    font-weight: 500;
+}
+
+@keyframes mateo-gasme-h1-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-35px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*=====  End of Mateo Gasme/Inicio  ======*/
+
+
+/*=============================================
+=            Sobre mí            =
+=============================================*/
+.about {
+    width: 50vw;
+    text-align: center;
+    height: 100vh;
+    background: var(--backgroundLight);
+    transition: var(--trans3);
+    color: var(--colorTextLight);
+}
+
+.about .about__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about__container .about__container__text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about__container .about__container__text h2 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    animation: about-h2-animation 1s ease;
+}
+
+@keyframes about-h2-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-35px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about .about__container .about__container__text p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 40vw;
+}
+
+/*=====  End of Sobre mí  ======*/
+
+
+
+/*=============================================
+=            Servicios            =
+=============================================*/
+.servicios {
+	width: 50vw;
+	text-align: center;
+	height: 100vh;
+	background: var(--backgroundLight);
+	transition: var(--trans3);
+	color: var(--colorTextLight);
+}
+
+.servicios span {
+	font-weight: 500;
+}
+
+.servicios .servicios__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicios .servicios__container .servicios__container__text h2 {
+    text-align: center;
+    margin: .67em 0;
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.servicios .servicios__container .servicios__container__text p {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-bottom: 20px;
+	width: 80vh;
+}
+
+.servicios i {
+	font-size: 2.7em;
+	margin: 1.07em 0.5em;
+}
+
+/*=====  End of Servicios  ======*/
+
+
+
+/*=============================================
+=            Contacto            =
+=============================================*/
+.contacto {
+	width: 50vw;
+	text-align: center;
+	height: 100vh;
+	background: var(--backgroundLight);
+	transition: var(--trans3);
+	color: var(--colorTextLight);
+}
+
+.contacto .contacto__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacto .contacto__container .contacto__container__text h2 {
+	text-align: center;
+	margin: .67em 0;
+	font-size: 3em;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contacto .contacto__container .contacto__container__text p {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-bottom: 20px;
+	width: 80vh;
+}
+
+.contacto .contacto__container .contacto__container__img a {
+	width: 20%;
+	height: 20%;
+	transition: var(--trans3);
+	color: var(--colorTextLight);
+}
+
+.contacto .contacto__container .contacto__container__img a:hover {
+	color: var(--colorTextLightHover);
+}
+
+.contacto .contacto__container .contacto__container__img a i {
+	font-size: 2.7em;
+	margin: 1.07em 0.5em;
+}
+
+/*=====  End of Contacto  ======*/
+
+/* Responsive design */
+
+/* 1000px */
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        margin-left: 30%;
+    }
+}
+
+/* 320px */
+
+@media screen and (max-width: 320px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        margin-left: 32%;
+    }
+
+    * p {
+        font-size: 1.2em;
+    }
+
+}

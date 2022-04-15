@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Mateo Gasme</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="description" content="¡Hola! Soy Mateo Gasme, desarrollador web Front-end y diseñador web. Tengo más de 6 años en el mundo del desarrollo web y te invito a visitar mi portafolio.">
+        <meta name="keywords" content="desarrollo web, diseño web, html, css, javascript, js, portafolio">
+        <meta name="author" content="Mateo Gasme">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta name="robots" content="notranslate">
+        <meta name="googlebot" content="notranslate">
+        <!-- Icon -->
+        <link rel="icon" href="img/favicon.png">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/scss/darkmode.css">
+        <link rel="stylesheet" href="css/githubCorner.css">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Google Fonts Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Google Fonts Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Github Link -->
+        <a href="https://github.com/mateogasme" target="_blank" class="github-corner" aria-label=" GitHub" tabindex="-1"><svg width="80" height="80" viewBox="0 0 250 250" style=" position: absolute; top: 0; right: 0; border: 0; fill: #151513; color: #fff;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+        <!-- Header -->
+        <header class="sidebar">
+            <nav class="sidebar__nav">
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <i class="fa-solid fa-house-user"></i> <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fa-solid fa-user-tie"></i> <span>Sobre mí</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <i class="fa-solid fa-server"></i> <span>Servicios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-solid fa-message"></i> <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Mateo Gasme -->
+            <section class="mateo-gasme" id="home">
+                <div class="mateo-gasme__container">
+                    <div class="mateo-gasme__container__text">
+                        <h1>Mateo Gasme</h1>
+                        <p>
+                            ¿Querés un sitio web profesional? Estás en el lugar correcto. <br>
+                            Hola, soy <span>Mateo Gasme</span> y estoy aquí para ayudarte a crear tu sitio web profesional.
+                        </p>
+                        <a href="#about" class="btn">
+                            <span> ¡Empezemos! </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sobre mí -->
+            <section class="about" id="about">
+                <div class="about__container">
+                    <div class="about__container__text">
+                        <h2>Sobre mí</h2>
+                        <p>
+                            Soy un <span>desarrollador web Frontend</span>, que se encarga de crear sitios web basados en <span>HTML, CSS y JavaScript</span>. Teniendo en cuenta el <span>posicionamiento/SEO y optimización de los sitios web</span>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicios -->
+            <section class="servicios" id="services">
+                <div class="servicios__container">
+                    <div class="servicios__container__text">
+                        <h2>Servicios</h2>
+                        <p>
+                            Ofrezco servicios de creación de sitios web basados en <span>HTML, CSS y JavaScript, PHP, etc.</span> Obviamente, <span>sitios web responsive</span> (sitios web adaptados para dispositivos móviles o resoluciones de pantalla pequeñas).
+                        </p>
+                    </div>
+                    <div class="servicios__container__img">
+                        <i class="fa-solid fa-server"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section class="contacto" id="contact">
+                <div class="contacto__container">
+                    <div class="contacto__container__text">
+                        <h2>Contacto</h2>
+                        <p>
+                            Si desea contactar conmigo, puede hacerlo a través de los siguientes medios:
+                        </p>
+                    </div>
+                    <div class="contacto__container__img">
+                        <a class="contacto__container__img-1" href="https://3xin.short.gy/aw1oS4" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a class="contacto__container__img-2" href="https://short.gy/hRvkNy" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="contacto__container__img-3" href="https://twitter.com/mateo_gasme" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src='javascript/main.js'></script>
+        <script src="javascript/app.js" type="module"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

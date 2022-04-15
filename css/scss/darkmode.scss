@@ -1,0 +1,127 @@
+// Colores
+$backgroundLight: #fafafa;
+$backgroundSidebarLight: #f6f6f6;
+$colorTextLight: #505050;
+$colorTextLightHover: #1b1b1b;
+$backgroundDark: #333;
+$backgroundSidebarDark: #262626;
+$colorTextDark: #fafafa;
+$colorTextDarkHover: #c6c6c6;
+
+// Transiciones
+$trans3: all 0.3s ease;
+$trans2: all 0.2s ease;
+$trans1: all 0.1s ease;
+
+// Sombras
+$sombraLight: 0px 0px 15px 0px rgba(0, 0, 0, 0.242);
+$sombraDark: 0px 0px 15px 0px rgba(255, 255, 255, 0.54);
+
+::-webkit-scrollbar{
+    body.dark & {
+        background: var(--backgroundSidebarDark);
+	    width: .8em;
+    }
+}
+
+::-webkit-scrollbar-thumb{
+	body.dark & {
+        background: #282828;
+	    margin: .2em;
+    }
+}
+
+body {
+    &.dark {
+        background: $backgroundDark;
+    }
+    transition: $trans3;
+}
+
+.sidebar {
+    body.dark & {
+        background: $backgroundSidebarDark;
+    }
+}
+
+.mateo-gasme, .servicios, .contacto, .ayuda {
+    body.dark & {
+        background: $backgroundDark;
+    }
+}
+
+p, h1, h2, h3, li, i, .sidebar .sidebar__nav ul li a {
+    body.dark & {
+        color: $colorTextDark;
+    }
+}
+
+i:hover {
+    body.dark & {
+        color: $colorTextDarkHover;
+    }
+}
+
+.sidebar .sidebar__nav ul li a:hover {
+    body.dark & {
+        color: $colorTextDarkHover;
+    }
+}
+
+// Switch
+.switch {
+    cursor: pointer;
+    background: #343D5B;
+    border-radius: 62.5em;
+    border: none;
+    position: relative;
+    display: flex;
+    outline: none;
+    transition: $trans3;
+    margin-left: .5em;
+    margin-bottom: .7em;
+    &::after {
+        content: "";
+        display: block;
+        width: 1.875em;
+        height: 1.875em;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 6.25em;
+        transition: $trans3;
+        box-shadow: $sombraLight;
+    }
+    &.active {
+        background: #ffa500;
+        color: #000;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+}
+
+.servicios i {
+    body.dark & {
+        &:hover {
+            color: $colorTextDark;
+        }
+    }
+}
+
+.about {
+    body.dark & {
+        background: $backgroundDark;
+    }
+}
