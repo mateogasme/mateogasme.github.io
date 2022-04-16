@@ -100,13 +100,13 @@ span {
 }
 
 
-/*=============================================
+/* =============================================
 =            Login            =
 =============================================*/
-.login {
+/* .login {
 	position: fixed;
-	display: flex;
-	width: 50vh;
+	display: none;
+	width: 55vh;
 	height: 130px;
 	border-radius: 7px;
 	box-shadow: var(--sombraLight);
@@ -114,7 +114,11 @@ span {
 	padding-bottom: 5em;
 	padding-top: 1em;
 	text-align: center;
-	margin-left: calc(50% - 125px);
+	margin-left: calc(50% - 130px);
+}
+
+.login.active {
+	display: flex;
 }
 
 .login h3 {
@@ -142,7 +146,28 @@ span {
 	border: solid 1px #ff3f3f;
 }
 
-/*=====  End of Login  ======*/
+.login .login__close-window {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 12px;
+	cursor: pointer;
+	transition: var(--trans3);
+	border: none;
+	background: transparent;
+}
+
+.login .login__close-window span {
+	font-size: 1.6em;
+	color: var(--colorTextLight);
+	transition: var(--trans3);
+}
+
+.login .login__close-window:hover span {
+	color: var(--colorTextLightHover);
+} */
+
+/*=====  End of Login  ====== */
 
 /*=====           End of Header        ======*/
 

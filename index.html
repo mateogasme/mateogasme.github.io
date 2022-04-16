@@ -78,13 +78,20 @@
         </nav>
     </header>
 
-    <!-- Inicio de sesíon opcional -->
-    <section class="login">
-        <div class="login__container">
+    <!-- Inicio de sesíon opcional
+    <section class="login active" id="login">
+        <button class="login__close-window" id="close-window">
+            <span>
+                &times;
+            </span>
+        </button>
+        <form class="login__container" id="google-login">
             <h3>Si querés estar al tanto de las novedades:</h3>
-            <button id="google-register"><i class="fa-brands fa-google"></i> Registrate con Google</button>
-        </div>
-    </section>
+            <button id="google-register"
+                title="Al registrarte con Google, sabremos que estás interesado en nuestros servicios y vamos a poder contactarte por Gmail para que estés al tanto de las novedades."><i
+                    class="fa-brands fa-google"></i> Registrate con Google</button>
+        </form>
+    </section> -->
 
     <main>
         <!-- Mateo Gasme -->
@@ -232,12 +239,14 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src='javascript/main.js'></script>
-    <script src="javascript/app.js" type="module"></script>
     <script>
         AOS.init();
     </script>
 
     <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
     <script>
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "firebase/app";
@@ -260,6 +269,8 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
     </script>
 </body>
 
