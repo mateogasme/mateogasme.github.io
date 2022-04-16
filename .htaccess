@@ -1,9 +1,0 @@
-RewriteEngine on
-
-Options +FollowSymLinks
-
-RewriteCond %{HTTP_HOST} ^www\.mateogasme\.github\.io$ [NC]
-
-RewriteRule ^(.*)$ http://mateogasme.github.io/$1 [R=301,L]
-
-ErrorDocument 404 /pages/errors/notfound.html
