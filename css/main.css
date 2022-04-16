@@ -8,21 +8,6 @@
 	scroll-behavior: smooth;
 }
 
-/* Github Corner */
-.github-corner {
-    position: fixed !important;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center !important;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #1f74b6;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-}
-
 :root {
 	/* Colores */
 	--backgroundLight: #fafafa;
@@ -113,6 +98,51 @@ span {
 .sidebar .sidebar__nav ul li a:hover {
 	color: var(--colorTextLightHover);
 }
+
+
+/*=============================================
+=            Login            =
+=============================================*/
+.login {
+	position: fixed;
+	display: flex;
+	width: 50vh;
+	height: 130px;
+	border-radius: 7px;
+	box-shadow: var(--sombraLight);
+	background: var(--backgroundLight);
+	padding-bottom: 5em;
+	padding-top: 1em;
+	text-align: center;
+	margin-left: calc(50% - 125px);
+}
+
+.login h3 {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: var(--colorTextLight);
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.login #google-register {
+	background: #ff3f3f;
+	color: #fafafa;
+	border: none;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: var(--trans3);
+}
+
+.login #google-register:hover {
+	background: #fafafa;
+	color: #ff3f3f;
+	border: solid 1px #ff3f3f;
+}
+
+/*=====  End of Login  ======*/
 
 /*=====           End of Header        ======*/
 
