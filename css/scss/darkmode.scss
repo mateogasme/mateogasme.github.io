@@ -15,7 +15,7 @@ $trans1: all 0.1s ease;
 
 // Sombras
 $sombraLight: 0px 0px 15px 0px rgba(0, 0, 0, 0.242);
-$sombraDark: 0px 0px 15px 0px rgba(255, 255, 255, 0.54);
+$sombraDark: 0px 0px 15px 0px rgba(255, 255, 255, 0.26);
 
 ::-webkit-scrollbar{
     body.dark & {
@@ -129,5 +129,28 @@ i:hover {
 .proyects {
     body.dark & {
         background: $backgroundDark;
+    }
+}
+
+.login {
+    body.dark & {
+        background: $backgroundDark;
+        box-shadow: $sombraDark;
+    }
+
+    #google-register {
+        body.dark & {
+            &:hover {
+                i {
+                    color: #ff3f3f
+                }
+            }
+        }
+    }
+
+    i {
+        body.dark & {
+            color: #fafafa;
+        }
     }
 }
