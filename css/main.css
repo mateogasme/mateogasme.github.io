@@ -179,12 +179,12 @@ main {
 =              Mateo Gasme/Inicio             =
 =============================================*/
 .mateo-gasme {
-    width: 100%;
+    width: 50vw;
     text-align: center;
     height: 100vh;
     background: var(--backgroundLight);
     transition: var(--trans3);
-	color: var(--colorTextLight);
+    color: var(--colorTextLight);
 }
 
 .mateo-gasme .mateo-gasme__container {
