@@ -18,6 +18,8 @@
 	--backgroundSidebarDark: #262626;
 	--colorTextDark: #fafafa;
 	--colorTextDarkHover: #c6c6c6;
+
+	/* Sombra */
 	--sombraLight: 1px 0px 21px 0px rgba(0, 0, 0, 0.11);
 	--sombraDark: 1px 0px 21px 0px rgba(255, 255, 255, 0.11);
 
