@@ -21,7 +21,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/scss/darkmode.css">
-    <link rel="stylesheet" href="css/githubCorner.css">
     <!-- Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Google Fonts Poppins -->
@@ -52,39 +51,32 @@
             <ul>
                 <li>
                     <a href="#home">
-                        <i class="fa-solid fa-house-user"></i> <span>Inicio</span>
+                        <i class="fa-solid fa-house-user"></i> <span data-value="home">Inicio</span>
                     </a>
                 </li>
                 <li>
                     <a href="#about">
-                        <i class="fa-solid fa-user-tie"></i> <span>Sobre mí</span>
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span_me">Sobre
+                            mí</span>
                     </a>
                 </li>
                 <li>
                     <a href="#proyects">
-                        <i class="fa-brands fa-github"></i> <span>Proyectos</span>
+                        <i class="fa-brands fa-github"></i> <span data-value="projects">Proyectos</span>
                     </a>
                 </li>
                 <li>
                     <a href="#services">
-                        <i class="fa-solid fa-server"></i> <span>Servicios</span>
+                        <i class="fa-solid fa-server"></i> <span data-value="services">Servicios</span>
                     </a>
                 </li>
                 <li>
                     <a href="#contact">
-                        <i class="fa-solid fa-message"></i> <span>Contacto</span>
+                        <i class="fa-solid fa-message"></i> <span data-value="contact">Contacto</span>
                     </a>
                 </li>
             </ul>
-            <!-- Idioma de la web -->
-            <div id="flags" class="flags">
-                <div class="flags_item" data-language="es">
-                    <img src="img/langs/ar.svg" alt="ar.svg">
-                </div>
-                <div class="flags__item" data-language="en">
-                    <img src="img/langs/um.svg" alt="um.svg">
-                </div>
-            </div>
         </nav>
     </header>
 
@@ -109,14 +101,13 @@
             <div class="mateo-gasme__container">
                 <div class="mateo-gasme__container__text">
                     <h1>Mateo Gasme</h1>
-                    <p>
+                    <p">
                         ¿Querés un sitio web profesional? Estás en el lugar correcto. <br>
                         Hola, soy <span>Mateo Gasme</span> y estoy aquí para ayudarte a crear tu sitio web
                         profesional.
-                    </p>
-                    <a href="#about" class="btn">
-                        <span> ¡Empecemos! </span>
-                    </a>
+                        </p>
+                        <a href="#about" class="btn" <span> ¡Empecemos! </span>
+                        </a>
                 </div>
             </div>
         </section>
@@ -126,12 +117,12 @@
             <div class="about__container">
                 <div class="about__container__text">
                     <h2>Sobre mí</h2>
-                    <p>
+                    <p">
                         Soy un <span>desarrollador web Frontend</span>, que se encarga de crear sitios web basados
                         en
                         <span>HTML, CSS y JavaScript</span>, teniendo en cuenta el <span>posicionamiento/SEO y
                             optimización de los sitios web</span>.
-                    </p>
+                        </p>
                 </div>
             </div>
         </section>
@@ -148,30 +139,24 @@
                 </div>
                 <div class="proyects__container__projects">
                     <div class="proyects__container__projects__item">
-                        <div class="proyects__container__projects__item__image">
-                            <img src="img/proyects/proyect1.png" alt="">
-                        </div>
                         <div class="proyects__container__projects__item__text">
-                            <h3>Plantilla de Portafolio</h3>
-                            <br>
-                            <p>
-                                Hice una plantilla de un portafolio con Bootstrap para que las personas se guien al
-                                hacer su portafolio o simplemente usen esta plantilla para su portafolio.
-                            </p>
-                            <a href="https://mateogasme.github.io/portafolio-plantilla-bootstrap/" class="btn"
-                                target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/mateogasme/portafolio-plantilla-bootstrap" class="btn"
-                                target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                            <h3">Plantilla de Portafolio</h3>
+                                <br>
+                                <p">
+                                    Hice una plantilla de un portafolio con Bootstrap para que las personas se guien al
+                                    hacer su portafolio o simplemente usen esta plantilla para su portafolio.
+                                    </p>
+                                    <a href="https://mateogasme.github.io/portafolio-plantilla-bootstrap/" class="btn"
+                                        target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/mateogasme/portafolio-plantilla-bootstrap" class="btn"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
                         </div>
                     </div>
                     <div class="proyects__container__projects__item">
-                        <div class="proyects__container__projects__item__image">
-                            <img src="img/proyects/proyect2.png" alt="">
-                        </div>
                         <div class="proyects__container__projects__item__text">
                             <h3>Proyecto 2</h3>
                             <p>
@@ -186,9 +171,6 @@
                         </div>
                     </div>
                     <div class="proyects__container__projects__item">
-                        <div class="proyects__container__projects__item__image">
-                            <img src="img/proyects/proyect3.png" alt="">
-                        </div>
                         <div class="proyects__container__projects__item__text">
                             <h3>Proyecto 3</h3>
                             <p>
@@ -256,35 +238,6 @@
         AOS.init();
     </script>
 
-    <!-- Firebase Scripts -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
-    <script>
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "firebase/app";
-        import { getAnalytics } from "firebase/analytics";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyCQ2bHyGrmenQLpoNEtkBNebPwWivP5Quo",
-            authDomain: "mg-auth-portafolio.firebaseapp.com",
-            projectId: "mg-auth-portafolio",
-            storageBucket: "mg-auth-portafolio.appspot.com",
-            messagingSenderId: "214042347215",
-            appId: "1:214042347215:web:46edb4507c1ce0fdc219ba",
-            measurementId: "G-KPYFSBQLLB"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const auth = firebase.auth();
-        const fs = firebase.firestore();
-    </script>
 </body>
 
 </html>

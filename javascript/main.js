@@ -1,4 +1,3 @@
-
 // Switch
 const btnSwitch = document.querySelector('#switch');
 

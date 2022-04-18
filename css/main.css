@@ -50,35 +50,6 @@ span {
 	font-weight: 500;
 }
 
-
-/*=============================================
-=            Languages            =
-=============================================*/
-.flags {
-	width: 75px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	text-align: right;
-}
-
-.flags_item {
-	width: 30px;
-}
-
-.flags img {
-	display: block;
-	cursor: pointer;
-	margin: 0 auto;
-	margin-left: 8px;
-	margin-top: 20px;
-	margin-right: -10px;
-	height: 25px;
-	position: static;
-}
-
-/*=====  End of Languages  ======*/
-
 /*=============================================
 =                    Header                   =
 =============================================*/
