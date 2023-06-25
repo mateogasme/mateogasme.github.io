@@ -442,8 +442,12 @@ footer ul li a:hover {
         flex-direction: column;
     }
 
+    .contact ul li {
+        font-size: 15px;
+    }
+
     #copy {
-        margin-bottom: 20px;
+        margin-top: 40px;
     }
 }
 
