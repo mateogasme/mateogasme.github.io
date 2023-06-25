@@ -423,6 +423,23 @@ footer ul li a:hover {
         font-size: 1.125em;
         padding: 0.625em 1.5em;
     }
+
+    .contact {
+        padding: 4.375em 3.4375em;
+        margin-top: 80px;
+    }
+
+    .contact h1 {
+        font-size: 3em;
+    }
+
+    .contact p {
+        font-size: 1.125em;
+    }
+
+    .contact ul li a {
+        font-size: 1.125em;
+    }
 }
 
 @media (max-width: 450px) {
