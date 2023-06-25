@@ -441,6 +441,10 @@ footer ul li a:hover {
         display: flex;
         flex-direction: column;
     }
+
+    #copy {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 450px) {
