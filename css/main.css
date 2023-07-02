@@ -52,6 +52,7 @@ body {
 
 #sidebar ul {
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 #sidebar ul li {
@@ -59,7 +60,6 @@ body {
     margin: 0 10px;
     border-radius: 0.3125em;
     cursor: pointer;
-    text-align: center;
     transition: all 400ms ease;
     font-size: 15px;
 }
@@ -183,8 +183,8 @@ body {
 }
 
 .home .btn-home-more {
-    padding: 0.75em 2em;
-    font-size: 1.3125em;
+    padding: 20px 40px;
+    font-size: 20px;
     background: #2c18d8;
     animation: bgDegradado 6s ease infinite;
     color: #fff;
@@ -192,11 +192,17 @@ body {
     border-radius: 0.375em;
     outline: 0;
     border: 0;
-    /* transition: all 0.25s ease; */
+    transition: all 0.25s ease;
 }
 
 .home .btn-home-more:hover {
-    background: #3c29db;
+    transform: translateY(20px);
+}
+
+.home .btn-home-more:focus {
+    box-shadow: 0 0 0 0.25rem rgba(31, 119, 235, 0.15);
+    outline: none;
+    transform: translateY(-4px);
 }
 
 @keyframes bgDegradado {
@@ -264,8 +270,8 @@ body {
 }
 
 .services .btn-services {
-    padding: 0.75em 2em;
-    font-size: 1.3125em;
+    padding: 20px 40px;
+    font-size: 20px;
     font-weight: 500;
     background: #fff;
     color: #3c29db;
@@ -310,11 +316,13 @@ body {
 
 .contact ul {
     display: flex;
+    flex-direction: column;
     margin-bottom: 40px;
 }
 
 .contact ul li {
     margin-right: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
 }
 
@@ -350,6 +358,7 @@ footer {
     justify-content: center;
     background: #080808;
     padding: 30px;
+    text-align: center;
 }
 
 footer span i {
@@ -394,15 +403,15 @@ footer ul li a:hover {
     }
 
     .home h1 {
-        font-size: 3em;
+        font-size: 25px;
     }
 
     .home p {
-        font-size: 1.125em;
+        font-size: 12px;
     }
 
     .home .btn-home-more {
-        font-size: 1.125em;
+        font-size: 12px;
         padding: 0.625em 1.5em;
     }
 
@@ -412,15 +421,33 @@ footer ul li a:hover {
     }
 
     .services h1 {
-        font-size: 3em;
+        font-size: 25px;
     }
 
     .services p {
-        font-size: 1.125em;
+        font-size: 12px;
+    }
+
+    .services ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services ul li {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .services ul li a i {
+        font-size: 12px;
+    }
+
+    .services ul li:nth-child(3) {
+        margin-bottom: -20px;
     }
 
     .services .btn-services {
-        font-size: 1.125em;
+        font-size: 12px;
         padding: 0.625em 1.5em;
     }
 
@@ -430,11 +457,11 @@ footer ul li a:hover {
     }
 
     .contact h1 {
-        font-size: 3em;
+        font-size: 25px;
     }
 
     .contact p {
-        font-size: 1.125em;
+        font-size: 12px;
     }
 
     .contact ul {
@@ -443,11 +470,11 @@ footer ul li a:hover {
     }
 
     .contact ul li {
-        font-size: 15px;
+        font-size: 12px;
     }
 
-    #copy {
-        margin-top: 40px;
+    .contact ul li a i {
+        font-size: 10px;
     }
 }
 

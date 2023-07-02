@@ -5,9 +5,7 @@ const btnCloseSidebar = document.querySelector('.btn-close-i');
 const liSidebar = document.querySelectorAll('#liSidebar');
 
 btnToggle.addEventListener('click', function () {
-    console.log('click');
     document.getElementById('sidebar').classList.toggle('active');
-    console.log(document.getElementById('sidebar'));
     blackScreen.classList.add('active');
 });
 
@@ -19,7 +17,6 @@ blackScreen.addEventListener('click', function () {
 btnCloseSidebar.addEventListener('click', function () {
     document.getElementById('sidebar').classList.remove('active');
     blackScreen.classList.remove('active');
-    console.log('click');
 });
 
 document.addEventListener('keydown', function (e) {
